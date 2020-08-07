@@ -24,7 +24,7 @@ Some exporters support the possibility to specify a level of interpretation for 
 For example, a ==headingLevelOffset== of 3 converts a 1st level Pillar heading to an ==<h4>== in HTML.
 
 
-[[[
+[[[language=pillar
 "headingLevelOffset" : 3
 ]]]
 This feature does not work in Pillar 7.0 and it is planned to reintroduce it. 
@@ -34,14 +34,14 @@ This feature does not work in Pillar 7.0 and it is planned to reintroduce it.
 !!!!Anchor definition
  To refer to a section or chapter, put an anchor (equivalent to ==\\label\{chapterAndSections\}== in LaTeX) using the ==@chapterAndSections== syntax on a ''separate line''. 
  
-[[[
+[[[language=pillar
 @chapterAndSections
 ]]]
  
 !!!!Anchor reference
 When you want to refer to an anchor (equivalent to ==\\ref\{chapterAndSections\}== in LaTeX), use the ==\*@chapterAndSections\*== syntax. Anchors are invisible and links will be rendered as: *@chapterAndSections*. If you get a Fig. without a number this is probably that you forgot the ==@== in the reference.
 
-[[[
+[[[language=pillar
 *@chapterAndSections*
 ]]]
 
@@ -49,7 +49,7 @@ When you want to refer to an anchor (equivalent to ==\\ref\{chapterAndSections\}
 
 You can create alias for links. This is especially adapted for web sites containing reference to other pages.
 
-[[[
+[[[language=pillar
 *Chapters>chapterAndSections*
 ]]]
 
@@ -61,7 +61,7 @@ To create a link to another pillar file, use the ==\*Alias>File.pillar@AnchorNam
 
 To create links to external resources, use the ==\*Pharo>http://pharo.org/\*== syntax which is rendered as *Pharo>http://pharo.org/*. 
 
-[[[
+[[[language=pillar
 *http://www.pharo.org*
 ]]]
 
